@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q5</title>
+</head>
+<body>
+
+<script>
+var n = parseInt(prompt("Enter The number"));
+var flag,i;
+ if (n == 0 || n == 1)
+    flag = 1;
+
+  for (i = 2; i <= n / 2; i++) {
+
+    // if n is divisible by i, then n is not prime
+    // change flag to 1 for non-prime number
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  // flag is 0 for prime numbers
+  if (flag == 0)
+    document.write(n + " is a prime number.");
+  else
+  	document.write(n + " is not prime number.");
+ </script>
+
+</body>
+</html>

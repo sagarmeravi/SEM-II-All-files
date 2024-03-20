@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3</title>
+</head>
+<script type="text/javascript">
+	var num = parseInt(prompt("Enter The Number"));
+	var temp = num;
+	var sum=0; 
+	var rem;
+	while(temp!==0){
+		rem = temp % 10;
+		sum = sum + (rem*rem*rem);
+		temp = Math.floor(temp/10);
+	}
+	if(sum == num){
+		document.write("The number "+ num+ " is Armstrong");
+	}
+	else{
+		document.write("The number "+ num+ " is Not Armstrong");
+	}
+</script>
+<body>
+
+</body>
+</html>

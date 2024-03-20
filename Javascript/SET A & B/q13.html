@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+ 
+	var num = parseInt(prompt("Enter the Number"));
+function calc(){
+var arr = []; // Initialize arr as an empty array
+for(var i=1; i<=num; i++){ // Declare the variable i in the loop
+    if(num % i == 0){ // Use the modulus operator (%) to check if num is divisible by i
+        arr.push(i);
+    }
+}
+document.getElementById("printfactor").innerHTML = arr;
+}
+</script>
+<style type="text/css">
+	.displayBox{
+		height: 50px;
+		width: 100px;
+		border: 2px solid black;
+		margin-top: 15px;
+		border-radius: 5px;
+	}
+	.container{
+		height: 100px;
+		width: 250px;
+		border: 2px solid black;
+		padding:10px;
+	}
+</style>
+<body>
+	<center>
+	<div class="container">
+		<h3>Press The Button To calculate the factors:</h3>
+		<button type="submit" onclick="calc()">Calculate</button>
+		<div class="displayBox">
+			<p id="printfactor"></p>
+		</div>
+		</div>
+	</center>
+</body>
+</html>

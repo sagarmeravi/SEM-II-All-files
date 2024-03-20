@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Name</label><br>
+		<input type="text" id="name"><br>
+		<label>Addres</label><br>
+		<input type="text" id="addr"><br>
+		<label>City</label><br>
+		<input type="text" id="city"><br>
+		<label>Pincode</label><br>
+		<input type="text" id="pin"><br>
+		<button type="submit" onclick="myfunc()">Submit</button>
+		<button type="reset" onclick="">Reset</button>
+			</form>
+			<script type="text/javascript">
+				function myfunc(){
+					var name = document.getElementById("name").value;
+					var pin = document.getElementById("pin").value; 
+					if(name =='' || !(name >= "a" && name <= "z") && !(name >= "A" && name <= "Z")){
+						alert("The form must contain only aplhabets & should Not be empty");
+					}
+					if(pin =='' || pin.toString().length!=6){
+						alert("The pin must be 6 digit")
+					}
+				}
+			</script>
+</body>
+</html>

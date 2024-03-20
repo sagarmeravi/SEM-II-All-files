@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function myfunc(event){
+	event.preventDefault();
+	var username = document.getElementById("uname").value;
+	var password = document.getElementById("pass").value;
+	if(username =='sagar' && password==1234){
+		window.open("table.html");
+		// document.write(username);
+	}
+	else{
+		alert("Wrong password or username");
+	}
+}
+
+	</script>
+</head>
+<body>
+	<h1>User Login</h1>
+	<form>
+		<label>User Name</label><br>
+		<input type="text" id="uname"><br>
+		<label>Password</label><br>
+		<input type="Password" id="pass"><br>
+		<button type="submit" onclick="myfunc(event)">Login</button>
+
+	</form>
+</body>
+</html>

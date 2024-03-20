@@ -1,0 +1,59 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function calc(event){
+		event.preventDefault();//prevents form from not submiting
+		var rad = document.getElementById("rad").value;
+		var val = (4/3) * 3.14 * (rad * rad * rad);
+		//used toFixed for fixing the lenght of float //
+		document.getElementById('val').value = val.toFixed(2);
+	}
+
+</script>
+<body>
+	<fieldset>
+	<h1>Input Radius value </h1>
+	<form >
+		<label for="rad">Radius</label><br>
+		<input type="number" id="rad"><br>
+
+		<label for="val">Volume</label><br>
+		<input type="number" id="val" readonly><br>
+		<button type="submit" onclick="calc(event)">Calculate</button>
+	</form>
+	</fieldset>
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>radius</title>
+ 	<script>
+ 		function myFunc(event){
+ 		event.preventDefault();
+ 		var rad = document.getElementById("radius").value;
+ 		var vol = (4/3) * 3.14 * (rad * rad * rad);
+ 		document.getElementById("volume").value = vol.toFixed(2);
+ 	}
+ 	</script>
+ </head>
+ <body>
+ 	<form>
+ 		<label>Radius</label>
+ 		<input type="number" id="radius"><br>
+ 		<label>Volume</label>
+ 		<input type="number" id="volume" readonly><br>
+ 		<br>
+ 		<button type="submit" onclick="myFunc(event)">Calculate</button>
+ 	</form>
+ </body>
+ </html>

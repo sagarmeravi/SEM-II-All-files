@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q17</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var str = prompt("Enter the string");
+	var newStr = '';
+	for(var i = 0; i < str.length; i++){
+		if(str[i] == ' '){
+			newStr = newStr + '*';
+		} else if(!isNaN(str[i])){
+			newStr =newStr + '?';
+		} else {
+			newStr = newStr + str[i];
+		}
+	}
+	document.write(newStr);
+</script>
+</body>
+</html>

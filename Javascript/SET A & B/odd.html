@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+var a = []; 
+var d; // Declare a variable to store each digit
+var num = parseInt(prompt("ENTER THE NUMBER")); 
+// Loop until num is not zero
+for(var i = 0; num != 0; i++){
+    d = num % 10; 
+    if(d % 2!= 0){ 
+        a.push(d);
+    }
+    num = Math.floor(num / 10); 
+}
+//METHOD
+//var sum = a.reduce(function(a, b){
+  //return a + b;
+//}, 0);
+var sum=0;
+for(var i = 0; i < a.length; i++){
+    sum += a[i];
+}
+
+
+document.write(sum); 
+
+</script>
+</body>
+</html>
