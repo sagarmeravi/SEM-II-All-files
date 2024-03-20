@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+font-family: 'Poppins', sans-serif;
+background: url("vvp.jpg");
+/*background: linear-gradient(270deg, #833ab4, #fd221e, #fcb045);
+background-size: 600% 600%;
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+*/
+background-size:cover;
+backdrop-filter: blur(5px);
+}
+h1{
+text-align:center;
+color: #black;
+}
+p{
+text-align:center;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+ul li{
+   list-style: none;
+   display: flex;
+   font-size: 16px;
+   color: red;
+  font-family: "impact";
+}
+ol li{
+   color: green;
+ font-family: poppins;
+}
+
+.container{
+   margin:auto;
+  width: 50%;
+  border: none;
+  padding: 0px;
+   height: 150px;
+   width: 300px;
+   background-color: #E6E6E6;
+   border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+
+}
+.holder{
+   display: flex;
+align-items: center;
+}
+.fotter{
+   margin-top: 10px;
+   color: #231123;
+   background-color: #52528C;
+   border-radius: 10px;
+}
+.imgs img{
+   height: 200px;
+   width: auto;
+   border-radius: 10px;
+    margin: 30px;
+}
+.imgs{
+
+   margin-top: 30px;
+    margin-bottom: none;
+   border-radius: 10px;
+}
+
